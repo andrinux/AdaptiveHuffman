@@ -4,11 +4,11 @@ Authors: Jerry Li & Andrinux
 
 Contains:
 
-LZ77
+LZ77(Using Hashtable to match strings)
 
 Dynamic Huffman, 
 
 Static Huffman, 
 
-Adaptive Huffman
+Adaptive Huffman(from a null tree)
 
