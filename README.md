@@ -1,8 +1,8 @@
 #zip Compression
 
 ##Project
-Algorithm: LZ77-Huffman Cascading
-Authors: Jerry Li & Andrinux
+- Algorithm: LZ77-Huffman Cascading
+- Authors: Jerry Li & Andrinux
 
 ##Technology
 * LZ77(Using Hashtable to match strings)
