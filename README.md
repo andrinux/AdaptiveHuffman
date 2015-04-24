@@ -1,14 +1,12 @@
-zip Compression
-Algorithm: LZ77-Huffman
+#zip Compression
+
+##Project
+Algorithm: LZ77-Huffman Cascading
 Authors: Jerry Li & Andrinux
 
-Contains:
-
-LZ77(Using Hashtable to match strings)
-
-Dynamic Huffman, 
-
-Static Huffman, 
-
-Adaptive Huffman(from a null tree)
+##Technology
+*LZ77(Using Hashtable to match strings)
+*Dynamic Huffman, 
+*Static Huffman, 
+*Adaptive Huffman(start from a null tree)
 
