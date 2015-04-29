@@ -38,7 +38,7 @@
 #define LIT_LEN 286
 #define ORG_SIZE 5624287
 #define Len_page 4096
-
+//This is the global array to store the LZ out put
 unsigned char LZOutputStream[4096] = { 0 };
 int total = 0;
 unsigned int mask = 0;
@@ -82,7 +82,7 @@ int main(int argc, char *argv[])
 	/************************************************************************/
 	test_mem_test = (unsigned char*)malloc(MAX_LENGTH_TEST*sizeof(unsigned char));		
 	fp_in = fopen(argv[2], "rb");
-    intot_test = fread(test_mem_test,1,MAX_LENGTH_TEST,fp_in);
+    	intot_test = fread(test_mem_test,1,MAX_LENGTH_TEST,fp_in);
 	intot_1 = intot_test;
 	do{
 		intot_1 = fread(test_mem_test,1,MAX_LENGTH_TEST,fp_in);
@@ -90,11 +90,11 @@ int main(int argc, char *argv[])
 	}while(intot_1==MAX_LENGTH_TEST);
 
 	free(test_mem_test);
-
-    sprintf(ffile,"%s", argv[1]);
+	//Note the input format
+    	sprintf(ffile,"%s", argv[1]);
     fp_re=fopen(ffile,"w");
 	/*fprintf(fp_re,"DEFLATE Lossless Compression \n");*/
-	
+	//C yuyan Jiushi Yumen, Haishi C++ hao A.
 	if(NULL== (F_out = (unsigned char*)calloc(Len_page,sizeof(unsigned char)))){
 		exit(0);
 	}
