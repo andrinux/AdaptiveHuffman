@@ -262,6 +262,8 @@ int DecodeSymbol( TREE *tree, BIT_FILE *input)
 
 /*
  * Update weight, check if need to swap node to maintain the huffman tree
+ * This is the key operations in Huffman COmpression. For each symbol,
+ * we need to update the model.
  */
 void UpdateModel( TREE *tree, int c)
 {
@@ -402,7 +404,9 @@ void add_new_node( TREE *tree, int c)
     tree->nodes[ zero_weight_node ].parent          = lightest_node;
     tree->leaf[ c ] = zero_weight_node;
 }
-
+/*
+* Still need to implement the shape-based printing of tress
+*/
 void PrintTree(TREE *tree)
 {
 	print_codes(tree);
