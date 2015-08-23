@@ -1,5 +1,7 @@
 #ifndef _BITIO_H
 #define _BITIO_H
+//the Io stream to/from files.
+
 
 #include <stdio.h>
 
@@ -9,6 +11,8 @@ typedef struct bit_file{
    int rack;
    int pacifier_counter;
    }BIT_FILE;
+
+typedef struct files FILES;
 
 BIT_FILE * OpenInputBitFile( char * name );
 BIT_FILE * OpenOutputBitFile( char * name );
